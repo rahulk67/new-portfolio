@@ -17,11 +17,12 @@ mongoose.connect(mongoURI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
-const todoRoutes = require("./routes/todoRoutes");
+const contactRoutes = require("./routes/contactRoutes");
 
-app.use("/api/todos", todoRoutes);
+app.use("/api/contact", contactRoutes);
+
 app.use("/check", (req, res) => {
-  res.send("Welcome to the Todo API");
+  res.send("Welcome to the contact API");
 });
 
 app.listen(5000, () => {

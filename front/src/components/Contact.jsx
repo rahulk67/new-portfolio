@@ -17,7 +17,8 @@ function Contact() {
     message: "",
   });
 
-  const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+const [sent, setSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -44,20 +45,63 @@ function Contact() {
 //     }, 3000);
 //   };
 
+// const handleSubmitEmAILJS = async (e) => {
+//   e.preventDefault();
+
+//   try {
+//     await emailjs.send(
+//       "YOUR_SERVICE_ID",
+//       "YOUR_TEMPLATE_ID",
+//       {
+//         from_name: formData.name,
+//         from_email: formData.email,
+//         message: formData.message,
+//       },
+//       "YOUR_PUBLIC_KEY"
+//     );
+
+//     setSent(true);
+
+//     setFormData({
+//       name: "",
+//       email: "",
+//       message: "",
+//     });
+
+//     setTimeout(() => {
+//       setSent(false);
+//     }, 3000);
+//   } catch (error) {
+//     console.error("Email failed:", error);
+//   }
+// };
+
 const handleSubmit = async (e) => {
   e.preventDefault();
 
+  if (!formData.name || !formData.email || !formData.message) {
+    return;
+  }
+
   try {
-    await emailjs.send(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
+    setLoading(true);
+
+    const response = await fetch(
+      `${'http://localhost:5000'}/api/contact`,
       {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-      },
-      "YOUR_PUBLIC_KEY"
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
     );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "Failed to send message");
+    }
 
     setSent(true);
 
@@ -71,9 +115,12 @@ const handleSubmit = async (e) => {
       setSent(false);
     }, 3000);
   } catch (error) {
-    console.error("Email failed:", error);
+    console.error(error);
+  } finally {
+    setLoading(false);
   }
 };
+
 
   return (
     <section
