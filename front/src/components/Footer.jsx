@@ -20,6 +20,10 @@ const technologies = [
   "Next.js",
   "Node.js",
   "MongoDB",
+  "MySQL",
+  "TypeScript",
+  "Tailwind CSS",
+  // "Docker"
 ];
 
 function Footer() {
@@ -122,7 +126,7 @@ function Footer() {
             {/* Socials */}
             <div className="mt-8 flex gap-3">
               <a
-                href="https://github.com/"
+                href="https://github.com/rahulk67"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
@@ -132,7 +136,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/rahulk67"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -142,7 +146,7 @@ function Footer() {
               </a>
 
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:rahulkumawat6767@gmail.com"
                 aria-label="Email"
                 className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-slate-400 transition hover:border-white/20 hover:bg-white/[0.05] hover:text-white"
               >

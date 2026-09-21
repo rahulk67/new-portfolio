@@ -41,9 +41,40 @@ const projects = [
     accent: "AI",
     number: "01",
   },
-
   {
     id: "02",
+    title: "CarePlus",
+    category: "Patient Management System",
+    year: "2026",
+    featured: false,
+
+    description:
+      "A comprehensive patient management system designed to help healthcare providers manage patient information, appointments, medical records, and billing.",
+
+    problem:
+      "Managing patient information often means switching between multiple tools, making it difficult to keep track of patient data, appointments, and medical records.",
+
+    solution:
+      "A centralized patient management system combining patient data, appointment scheduling, medical records and billing.",
+
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+      "Tailwind CSS",
+    ],
+
+    github: "https://github.com/rahulk67",
+    live: "https://care-plus-frontend-tau.vercel.app",
+
+    accent: "PS",
+    number: "02",
+  },
+
+  {
+    id: "03",
     title: "PoojaClick",
     category: "E-commerce / Booking",
     year: "2026",
@@ -71,11 +102,11 @@ const projects = [
     live: "https://poojaclick.com",
 
     accent: "EC",
-    number: "02",
+    number: "03",
   },
 
   {
-    id: "03",
+    id: "04",
     title: "MERN Admin Platform",
     category: "Full Stack",
     year: "2025",
@@ -103,7 +134,7 @@ const projects = [
     live: "#",
 
     accent: "FS",
-    number: "03",
+    number: "04",
   },
 ];
 
@@ -176,11 +207,10 @@ const Projects = () => {
                 <button
                   key={project.id}
                   onClick={() => setActiveProject(project)}
-                  className={`group relative w-full border-b border-slate-200 p-5 text-left transition-all duration-300 ${
-                    isActive
+                  className={`group relative w-full border-b border-slate-200 p-5 text-left transition-all duration-300 ${isActive
                       ? "bg-white"
                       : "hover:bg-white"
-                  }`}
+                    }`}
                 >
                   {isActive && (
                     <motion.div
@@ -194,11 +224,10 @@ const Projects = () => {
                     <div>
                       <div className="flex items-center gap-3">
                         <span
-                          className={`font-mono text-xs ${
-                            isActive
+                          className={`font-mono text-xs ${isActive
                               ? "text-blue-600"
                               : "text-slate-300"
-                          }`}
+                            }`}
                         >
                           {project.number}
                         </span>
@@ -211,11 +240,10 @@ const Projects = () => {
                       </div>
 
                       <h3
-                        className={`mt-3 text-base font-semibold transition-colors ${
-                          isActive
+                        className={`mt-3 text-base font-semibold transition-colors ${isActive
                             ? "text-slate-900"
                             : "text-slate-500 group-hover:text-slate-900"
-                        }`}
+                          }`}
                       >
                         {project.title}
                       </h3>
@@ -227,11 +255,10 @@ const Projects = () => {
 
                     <ArrowUpRight
                       size={16}
-                      className={`mt-1 transition-all duration-300 ${
-                        isActive
+                      className={`mt-1 transition-all duration-300 ${isActive
                           ? "text-blue-600"
                           : "text-slate-300 group-hover:-translate-y-1 group-hover:translate-x-1"
-                      }`}
+                        }`}
                     />
                   </div>
                 </button>
@@ -371,31 +398,31 @@ const Projects = () => {
                     <div className="flex items-center gap-2">
 
                       <a
-                      data-tooltip-id="my-first-tooltip" 
-        data-tooltip-content="View on GitHub"
-                     
+                        data-tooltip-id="my-first-tooltip"
+                        data-tooltip-content="View on GitHub"
+
                         href={activeProject.github}
                         target="_blank"
                         rel="noreferrer"
                         className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-500 transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
                         aria-label="GitHub"
                       >
-                   <img  src="/assets/github.svg" alt="GitHub" className="h-7 w-7" />
+                        <img src="/assets/github.svg" alt="GitHub" className="h-7 w-7" />
                       </a>
 
-                       <Tooltip id="my-first-tooltip" place="top"
-  style={{
-    backgroundColor: "#0F172A",
-    color: "#F8FAFC",
-    fontSize: "12px",
-    fontWeight: "500",
-    padding: "3px 3px",
-    borderRadius: "6px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-    border: "1px solid #1E293B",
-    maxWidth: "220px",
-    zIndex: 9999,
-  }} />
+                      <Tooltip id="my-first-tooltip" place="top"
+                        style={{
+                          backgroundColor: "#0F172A",
+                          color: "#F8FAFC",
+                          fontSize: "12px",
+                          fontWeight: "500",
+                          padding: "3px 3px",
+                          borderRadius: "6px",
+                          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+                          border: "1px solid #1E293B",
+                          maxWidth: "220px",
+                          zIndex: 9999,
+                        }} />
 
 
                       <a

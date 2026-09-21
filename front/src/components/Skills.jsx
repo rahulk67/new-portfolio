@@ -75,9 +75,19 @@ const skillCategories = [
       },
       {
         name: "Authentication",
-        level: "Intermediate",
+        level: "Advanced",
         description: "JWT, protected routes & sessions",
       },
+      {
+        name: "Socket.IO",
+        level: "Intermediate",
+        description: "Real-time bi-directional communication",
+      },
+      {
+        name: "Redis",
+        level: "Intermediate",
+        description: "In-memory data structure & caching",
+      }
     ],
   },
 
@@ -109,7 +119,7 @@ const skillCategories = [
   {
     id: "tools",
     number: "04",
-    title: "Tools",
+    title: "Tools & AI ",
     icon: Wrench,
     description: "Tools I use to build, test and ship applications.",
     skills: [
@@ -132,6 +142,11 @@ const skillCategories = [
         name: "Docker",
         level: "Learning",
         description: "Containerized application environments",
+      },
+      {
+        name: "ChatGPT, Gemini & Claude",
+        level: "Advanced",
+        description: "AI tools for problem solving",
       },
     ],
   },

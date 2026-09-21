@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, ArrowDown, Code2,Code,UserShield } from "lucide-react";
+import { ArrowUpRight, ArrowDown, Code2, Code, UserShield } from "lucide-react";
 
 const Home = () => {
   return (
@@ -43,7 +43,7 @@ const Home = () => {
               </span>
 
               <span className="text-sm font-medium text-slate-600">
-                Available for opportunities
+                Available for opportunities (Remote/Hybrid)
               </span>
             </motion.div>
 
@@ -101,12 +101,12 @@ const Home = () => {
                 Let's talk
               </a>
               <a
-  href="https://collection.cloudinary.com/rahulk/a5676da371bbf741e20a63b0dd18eb28"
-  download
-  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600"
->
-  Download Resume
-</a>
+                href="https://collection.cloudinary.com/rahulk/a5676da371bbf741e20a63b0dd18eb28"
+                download
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600"
+              >
+                Download Resume
+              </a>
             </motion.div>
 
             {/* Social */}
@@ -117,7 +117,7 @@ const Home = () => {
               className="mt-10 flex items-center gap-5"
             >
               <a
-                href="#"
+                href="https://github.com/rahulk67/"
                 className="text-slate-400 transition-colors hover:text-slate-900"
                 aria-label="GitHub"
               >
@@ -125,7 +125,7 @@ const Home = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/rahulk67/"
                 className="text-slate-400 transition-colors hover:text-blue-600"
                 aria-label="LinkedIn"
               >
@@ -135,7 +135,7 @@ const Home = () => {
               <span className="h-px w-12 bg-slate-200" />
 
               <span className="text-xs font-medium uppercase tracking-[0.2em] text-slate-400">
-                Jaipur · India
+                 · India
               </span>
             </motion.div>
           </div>

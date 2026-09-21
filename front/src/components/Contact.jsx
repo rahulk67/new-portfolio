@@ -214,7 +214,7 @@ const handleSubmit = async (e) => {
               {/* Contact links */}
               <div className="mt-8 space-y-3">
                 <a
-                  href="mailto:your-email@example.com"
+                  href="mailto:rahulkumawat6767@gmail.com"
                   className="group flex items-center justify-between rounded-xl border border-white/10 px-4 py-3 transition hover:border-blue-400/30 hover:bg-white/[0.03]"
                 >
                   <div className="flex items-center gap-3">
@@ -231,7 +231,7 @@ const handleSubmit = async (e) => {
                 </a>
 
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/rahulk67/"
                   target="_blank"
                   rel="noreferrer"
                   className="group flex items-center justify-between rounded-xl border border-white/10 px-4 py-3 transition hover:border-blue-400/30 hover:bg-white/[0.03]"
@@ -250,7 +250,7 @@ const handleSubmit = async (e) => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/rahulk67/"
                   target="_blank"
                   rel="noreferrer"
                   className="group flex items-center justify-between rounded-xl border border-white/10 px-4 py-3 transition hover:border-blue-400/30 hover:bg-white/[0.03]"

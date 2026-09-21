@@ -25,7 +25,12 @@ const experiences = [
       "Node.js",
       "Express.js",
       "MongoDB",
+      "MySQL",
+      "Socket.IO",
+      "Redis",
       "REST APIs",
+      "Git & GitHub",
+      "Postman",
     ],
     highlights: [
       "Developed responsive and reusable React interfaces",
@@ -37,7 +42,7 @@ const experiences = [
   {
     id: "01",
     year: "2024",
-    period: "Jul 2024 — Aug 2024",
+    period: "Jul 2024 — Sep 2024",
     company: "Zidio Development",
     role: "Web Developer",
     type: "Internship",
